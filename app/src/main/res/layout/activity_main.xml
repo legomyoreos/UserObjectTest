@@ -10,7 +10,7 @@
         android:id="@+id/usernameEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="1dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:ems="10"
@@ -18,13 +18,14 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/realNameEditText"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/realNameEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="-3dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:ems="10"
@@ -32,13 +33,14 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/ageEditText"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/ageEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="-1dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:ems="10"
@@ -46,13 +48,14 @@
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/genderEditText"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/genderEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="-1dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:ems="10"
@@ -60,20 +63,33 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/locationEditText"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/locationEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:ems="10"
         android:hint="Location"
         android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
